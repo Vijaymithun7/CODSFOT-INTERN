@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 { font-size: 1.5rem; }
+.logo span { font-size: 0.8rem; color: #ccc; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 0.8rem; font-weight: bold; }
+
+/* Hero Section */
+.hero {
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main.jpeg');
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.hero-text h2 { font-size: 2.5rem; margin-bottom: 15px; }
+.hero-text p { max-width: 500px; margin-bottom: 25px; line-height: 1.6; }
+
+/* About Me Section */
+.about {
+    padding: 80px 10%;
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image img {
+    width: 350px;
+    box-shadow: 20px 20px 0px #f0f0f0; /* Mimics the offset background effect */
+}
+
+.about-content h3 { font-size: 1.8rem; margin-bottom: 5px; }
+.underline { width: 50px; height: 3px; background: #007bff; margin-bottom: 20px; }
+.about-content h4 { margin-bottom: 15px; color: #444; }
+.about-content p { color: #666; line-height: 1.8; margin-bottom: 25px; }
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-secondary { background: #3b82f6; border-radius: 4px; }
